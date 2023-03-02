@@ -1,0 +1,12 @@
+<title>Prediction</title>
+{% if animalName %}
+    <h1>This is a {{ animalName }}</h1>
+    <div>
+        <img src="{{ image }}">
+    </div>
+    <a href="./">Return Home</a>
+
+{% else %}
+    <a href="./">Return Home</a>
+
+{% endif %}
