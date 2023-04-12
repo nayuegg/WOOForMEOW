@@ -13,7 +13,7 @@ import numpy as np
 def predict(img):
     net = Net().cpu().eval()
     # load the parameters of the model
-    net.load_state_dict(torch.load('src/model (1).pt', map_location=torch.device('cpu')))
+    net.load_state_dict(torch.load('./model (1).pt', map_location=torch.device('cpu')))
     # transform the image
     img=transform(img)
     # unsqueeze the image
